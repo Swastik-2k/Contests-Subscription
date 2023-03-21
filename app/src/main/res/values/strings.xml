@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Contests Subscription</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="upcomingcontests">Upcoming Contests</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account">Don\'t have an account? </string>
+    <string name="already_have_an_account">Already have an account? </string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="title_activity_login2">LoginActivity2</string>
+    <string name="about">About</string>
+    <string name="select_sites">Select Sites</string>
+    <string name="select_your_sites">Select your sites</string>
+    <string name="contest_site_icon">Contest Site Icon</string>
+    <string name="site">Site</string>
+    <string name="codeforces">Codeforces</string>
+    <string name="codechef">CodeChef</string>
+    <string name="atcoder">AtCoder</string>
+    <string name="register">Register</string>
+    <string name="name">Name</string>
+    <string name="link">Github Repo: <a href="https://github.com/masterchief164/Contests_Subscription">Contest Subscription</a></string>
+    <string name="aim_provide_lists_of_up_coming_contests_for_major_competitive_coding_platforms">Aim: Provide lists of up coming contests for major competitive coding platforms</string>
+    <string name="developer_shaswat_gupta">Developer: Shaswat Gupta</string>
+    <string name="contests_subscription_n_app">Contests Subscription \n App</string>
+    <string name="app_icon">app icon</string>
+</resources>

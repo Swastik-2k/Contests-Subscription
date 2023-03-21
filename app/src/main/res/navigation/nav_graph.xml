@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/upcomingContests">
+
+    <fragment
+        android:id="@+id/upcomingContests"
+        android:name="com.example.contestssubscription.UpcomingContests"
+        android:label="fragment_upcoming_contests"
+        tools:layout="@layout/fragment_upcoming_contests" >
+        <action
+            android:id="@+id/action_upcomingContests_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_upcomingContests_to_about"
+            app:destination="@id/about" />
+        <action
+            android:id="@+id/action_upcomingContests_to_selectSites"
+            app:destination="@id/selectSites" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.contestssubscription.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_upcomingContests"
+            app:destination="@id/upcomingContests"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_loginFragment_to_register"
+            app:destination="@id/register"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/about"
+        android:name="com.example.contestssubscription.About"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" >
+        <action
+            android:id="@+id/action_about_to_upcomingContests"
+            app:destination="@id/upcomingContests" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectSites"
+        android:name="com.example.contestssubscription.SelectSites"
+        android:label="fragment_select_sites"
+        tools:layout="@layout/fragment_select_sites" >
+        <action
+            android:id="@+id/action_selectSites_to_upcomingContests"
+            app:destination="@id/upcomingContests" />
+    </fragment>
+    <fragment
+        android:id="@+id/register"
+        android:name="com.example.contestssubscription.Register"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_register_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_register_to_upcomingContests"
+            app:destination="@id/upcomingContests"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
